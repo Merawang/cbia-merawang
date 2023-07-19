@@ -13,6 +13,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import Chip from '@mui/material/Chip';
 
 import AddIcon from '@mui/icons-material/Add';
 
@@ -98,7 +99,7 @@ const Home = () => {
                                         {row?.Timestamp.split(' ')[0]}
                                     </TableCell>
                                     <TableCell align="left">{row?.NamaObat || '-'}</TableCell>
-                                    <TableCell align="left">{row?.ZatAktif || '-'}</TableCell>
+                                    <TableCell align="left">{row?.ZatAktif?.split(', ').map((item) => <Chip size='small' className='mr-1' color='warning' label={item || '-'} />)}</TableCell>
                                     <TableCell align="left">{row?.Jumlah || '-'}</TableCell>
                                     <TableCell align="left">{row?.Kedaluarsa || '-'}</TableCell>
                                     <TableCell align="left">{row?.KotakObat || '-'}</TableCell>
