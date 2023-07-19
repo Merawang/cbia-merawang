@@ -1,0 +1,202 @@
+{
+    "medicine": [
+        {
+            "Timestamp": "19/07/2023 17:11:30",
+            "NamaObat": "Mefenamic Acid",
+            "ZatAktif": "Mefenamic Acid",
+            "Jumlah": "20",
+            "Kedaluarsa": "2024",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "19/07/2023 17:14:34",
+            "NamaObat": "Tes",
+            "ZatAktif": "Tes",
+            "Jumlah": "Tes",
+            "Kedaluarsa": "Tes",
+            "KotakObat": "Tes",
+            "Catatan": "Tes"
+        },
+        {
+            "Timestamp": "20/07/2023 17:11:30",
+            "NamaObat": "Cefadroxil Monohydrate",
+            "ZatAktif": "Cefadroxil Monohidrat",
+            "Jumlah": "10",
+            "Kedaluarsa": "2027",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "21/07/2023 17:11:30",
+            "NamaObat": "Tablet Tambah Darah",
+            "ZatAktif": "Ferrous Fumarate, Folic Acid",
+            "Jumlah": "10",
+            "Kedaluarsa": "2023",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "22/07/2023 17:11:30",
+            "NamaObat": "Aclofenac Potasium",
+            "ZatAktif": "Diclofenac Potassium",
+            "Jumlah": "10",
+            "Kedaluarsa": "2023",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "23/07/2023 17:11:30",
+            "NamaObat": "Seluim",
+            "ZatAktif": "Simvastatin 20mg",
+            "Jumlah": "30",
+            "Kedaluarsa": "2027",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "24/07/2023 17:11:30",
+            "NamaObat": "Paracetamol",
+            "ZatAktif": "Paracetamol",
+            "Jumlah": "10",
+            "Kedaluarsa": "2027",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "25/07/2023 17:11:30",
+            "NamaObat": "Farsifen",
+            "ZatAktif": "Ibuprofen",
+            "Jumlah": "10",
+            "Kedaluarsa": "2024",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "26/07/2023 17:11:30",
+            "NamaObat": "Amlodipin Besilate",
+            "ZatAktif": "Amlodipin Besilate",
+            "Jumlah": "10",
+            "Kedaluarsa": "2025",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "27/07/2023 17:11:30",
+            "NamaObat": "Vitamin B Complex",
+            "ZatAktif": "Vitamin B Complex",
+            "Jumlah": "14",
+            "Kedaluarsa": "2024",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "28/07/2023 17:11:30",
+            "NamaObat": "Allopurinol",
+            "ZatAktif": "Allopurinol",
+            "Jumlah": "30",
+            "Kedaluarsa": "2023",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "29/07/2023 17:11:30",
+            "NamaObat": "Gratheos",
+            "ZatAktif": "Diclofenac Potassium",
+            "Jumlah": "10",
+            "Kedaluarsa": "2027",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "30/07/2023 17:11:30",
+            "NamaObat": "Sirup Cohistan",
+            "ZatAktif": "Guaifenesin 50mg, CTM 1mg",
+            "Jumlah": "1",
+            "Kedaluarsa": "2024",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "31/07/2023 17:11:30",
+            "NamaObat": "Sirup Paracetamol",
+            "ZatAktif": "Paracetamol",
+            "Jumlah": "1",
+            "Kedaluarsa": "2025",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "01/08/2023 17:11:30",
+            "NamaObat": "Hepa-Q",
+            "ZatAktif": "",
+            "Jumlah": "4",
+            "Kedaluarsa": "2026",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "02/08/2023 17:11:30",
+            "NamaObat": "Obat Angin Patpoles Terwelu",
+            "ZatAktif": "",
+            "Jumlah": "6",
+            "Kedaluarsa": "2025",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "03/08/2023 17:11:30",
+            "NamaObat": "Quantidex",
+            "ZatAktif": "Tripolidine HCl, Pseudoephedrine HCl",
+            "Jumlah": "8",
+            "Kedaluarsa": "2024",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "04/08/2023 17:11:30",
+            "NamaObat": "Ranitidine HCl",
+            "ZatAktif": "Ranitidine HCl",
+            "Jumlah": "10",
+            "Kedaluarsa": "2025",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "05/08/2023 17:11:30",
+            "NamaObat": "Alpara",
+            "ZatAktif": "Paracetamol, Phenylpropanolamine HCl, CTM, Dextromethophan HBr",
+            "Jumlah": "2",
+            "Kedaluarsa": "-",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "06/08/2023 17:11:30",
+            "NamaObat": "Panadol Cold-Flu",
+            "ZatAktif": "Paracetamol, Pseudoephedrine HCl, Dextromethorphan HBr",
+            "Jumlah": "3",
+            "Kedaluarsa": "-",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "07/08/2023 17:11:30",
+            "NamaObat": "Simuastatin",
+            "ZatAktif": "Simuastatin",
+            "Jumlah": "10",
+            "Kedaluarsa": "2025",
+            "KotakObat": "-",
+            "Catatan": "-"
+        },
+        {
+            "Timestamp": "08/08/2023 17:11:30",
+            "NamaObat": "Ondansetron HCl Dihydrate",
+            "ZatAktif": "Ondansetron HCl Dihydrate",
+            "Jumlah": "10",
+            "Kedaluarsa": "2024",
+            "KotakObat": "-",
+            "Catatan": "-"
+        }
+    ]
+}
