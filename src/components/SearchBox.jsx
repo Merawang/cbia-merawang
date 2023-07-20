@@ -41,7 +41,7 @@ const SearchBox = ({ placeholder, searchText, setSearchText, filter }) => {
             <TextField
                 fullWidth
                 onChange={handleInputChange}
-                label="Cari judul buku"
+                label="Cari nama obat.."
                 placeholder={placeholder}
                 id="search"
                 margin='dense'

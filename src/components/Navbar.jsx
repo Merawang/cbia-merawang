@@ -8,9 +8,9 @@ const Navbar = ({ children }) => {
             <div className="wrapper flex flex-row justify-between items-center shadow px-6 py-2">
                 <div className='basis-1/4'>{children}</div>
                 <NavLink to={'/'}>
-                    <div className='flex flex-row justify-center items-center gap-2 basis-1/2'>
-                        <TimelineIcon className='text-blue-600' sx={{ fontSize: '3em' }} />
-                        <h1 className="text-xl font-bold text-gray-800">Daftar Obat CBIA - KKN Merawang</h1>
+                    <div className='flex flex-row justify-center items-center gap-2 basis-3'>
+                        <TimelineIcon className='text-blue-600' sx={{ fontSize: '2.5em' }} />
+                        <h1 className="md:text-xl font-bold text-gray-800">SeterangMerawang</h1>
                     </div>
                 </NavLink>
                 <div className='basis-1/4'></div>

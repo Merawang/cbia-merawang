@@ -62,18 +62,17 @@ const Home = () => {
 
 
     return (<>
-        <h1 className="text-black font-bold text-2xl text-center mb-5">Daftar Obat:</h1>
+        <h1 className="text-black font-bold text-xl md:text-2xl text-center mb-5">Daftar Obat:</h1>
         <div className="flex flex-col justify-center items-center space-y-5">
             <div id="search" className='w-full'>
                 <SearchBox
-                    placeholder={'Cari nama obat di sini..'}
+                    placeholder={'Contoh: Paracetamol'}
                     searchText={searchText}
                     setSearchText={setSearchText}
                     filter={filter}
                 />
             </div>
             <section id="table" className='w-full h-[60vh] overflow-y-auto'>
-                {message?.error && <>Error</>}
                 <TableContainer component={Paper}>
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
                         <TableHead>
@@ -89,7 +88,8 @@ const Home = () => {
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            {isLoading && <TableRow><TableCell align="left"><span className='font-bold' >Loading..</span></TableCell></TableRow>}
+                            {isLoading && <TableRow><TableCell align="left"><span className='font-bold' >Memuat..</span></TableCell></TableRow>}
+                            {message?.error && <TableRow><TableCell align="left"><span className='font-bold' >{message?.message || 'Terjadi error pada sistem'}</span></TableCell></TableRow>}
                             {filteredData?.map((row, i) => (
                                 <TableRow
                                     key={row?.Timestamp}
@@ -99,7 +99,7 @@ const Home = () => {
                                         {row?.Timestamp.split(' ')[0]}
                                     </TableCell>
                                     <TableCell align="left">{row?.NamaObat || '-'}</TableCell>
-                                    <TableCell align="left">{row?.ZatAktif?.split(', ').map((item) => <Chip size='small' className='mr-1' color='warning' label={item || '-'} />)}</TableCell>
+                                    <TableCell align="left">{row?.ZatAktif?.split(', ').map((item) => <Chip size='small' className='mr-1 mb-1' color='warning' label={item || '-'} />)}</TableCell>
                                     <TableCell align="left">{row?.Jumlah || '-'}</TableCell>
                                     <TableCell align="left">{row?.Kedaluarsa || '-'}</TableCell>
                                     <TableCell align="left">{row?.KotakObat || '-'}</TableCell>
