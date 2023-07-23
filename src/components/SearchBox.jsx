@@ -10,7 +10,7 @@ import ListSubheader from '@mui/material/ListSubheader';
 
 import SearchIcon from '@mui/icons-material/Search';
 
-const SearchBox = ({ placeholder, searchText, setSearchText, filter }) => {
+const SearchBox = ({ placeholder, searchText, setSearchText, selectedSort, setSelectedSort, filter }) => {
 
     const sortList = [
         {
@@ -23,16 +23,16 @@ const SearchBox = ({ placeholder, searchText, setSearchText, filter }) => {
         },
     ]
 
-    const [selectedSort, setSelectedSort] = useState('');
-
     const handleSort = (event) => {
-        setSelectedSort(event.target.value);
+        const value = event?.target?.value;
+        setSelectedSort(value);
+        filter(searchText, selectedSort);
     }
 
     const handleInputChange = (event) => {
-        const value = event.target.value;
+        const value = event?.target?.value;
         setSearchText(value);
-        filter(value);
+        filter(searchText, selectedSort);
     }
 
 

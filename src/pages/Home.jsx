@@ -50,12 +50,29 @@ const Home = () => {
     // Search
     const [searchText, setSearchText] = useState('')
     const [filteredData, setFilteredData] = useState([]);
+    const [selectedSort, setSelectedSort] = useState('');
     useEffect(() => setFilteredData(data), [data]);
 
-    const filter = (value) => {
-        const filtered = data?.filter((item) =>
+    const sortDrugs = (key, data) => {
+        if (key === 'nameAsc') {
+            return data.sort((a, b) => b.NamaObat.toLowerCase().localeCompare(a.NamaObat.toLowerCase()));
+        }
+        else if (key === 'nameDesc') {
+            return data.sort((a, b) => a.NamaObat.toLowerCase().localeCompare(b.NamaObat.toLowerCase()));
+        }
+        else {
+            return data
+        }
+    }
+
+    const filter = (value = searchText, sort = selectedSort) => {
+        let filtered = data?.filter((item) =>
             item?.NamaObat?.toLowerCase().includes(value.toLowerCase())
         );
+
+        if (selectedSort) {
+            filtered = sortDrugs(sort, filtered);
+        }
 
         filtered[0] ? setFilteredData(filtered) : setFilteredData([]);
     }
@@ -70,6 +87,8 @@ const Home = () => {
                     searchText={searchText}
                     setSearchText={setSearchText}
                     filter={filter}
+                    selectedSort={selectedSort}
+                    setSelectedSort={setSelectedSort}
                 />
             </div>
             <section id="table" className='w-full h-[60vh] overflow-y-auto'>
@@ -99,7 +118,7 @@ const Home = () => {
                                         {row?.Timestamp.split(' ')[0]}
                                     </TableCell>
                                     <TableCell align="left">{row?.NamaObat || '-'}</TableCell>
-                                    <TableCell align="left">{row?.ZatAktif?.split(', ').map((item) => <Chip size='small' className='mr-1 mb-1' color='warning' label={item || '-'} />)}</TableCell>
+                                    <TableCell align="left">{row?.ZatAktif?.split(', ').map((item, i) => <Chip key={i} size='small' className='mr-1 mb-1' color='warning' label={item || '-'} />)}</TableCell>
                                     <TableCell align="left">{row?.Jumlah || '-'}</TableCell>
                                     <TableCell align="left">{row?.Kedaluarsa || '-'}</TableCell>
                                     <TableCell align="left">{row?.KotakObat || '-'}</TableCell>

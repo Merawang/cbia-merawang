@@ -9,8 +9,8 @@ const Navbar = ({ children }) => {
                 <div className='basis-1/4'>{children}</div>
                 <NavLink to={'/'}>
                     <div className='flex flex-row justify-center items-center gap-2 basis-3'>
-                        <TimelineIcon className='text-blue-600' sx={{ fontSize: '2.5em' }} />
-                        <h1 className="md:text-xl font-bold text-gray-800">SeterangMerawang</h1>
+                        <img src="logoKKNpng.png" alt="Logo KKN Seterang Merawang" width={50} />
+                        <h1 className="md:text-xl font-bold text-gray-800">Obat - <span className='text-blue-600'>SeterangMerawang</span></h1>
                     </div>
                 </NavLink>
                 <div className='basis-1/4'></div>
